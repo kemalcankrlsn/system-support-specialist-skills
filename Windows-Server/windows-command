@@ -3,12 +3,32 @@ cd --- klasöre gitmek
 dir --- klasörleri listele
 cls --- ekran temizleme
 
+GİT Kontrolleri:
 git -v --- versiyon kontrolü git
+git status --- dosyaların durumları git ile pc arasında kontrol ediyor
+
+
+GİT Repoyu Getirme:
 git clone https://github.com/kemalcankrlsn/system-support-specialist-skills.git --- repo yu getirme
 
 
+GİT Create New Repo and Push:
 git init --- .git oluşturuyor
-git status --- dosyaların durumları git ile pc arasında kontrol ediyor
 git add * --- tüm dosyaları ekleme
-git commit -m "first update" ---
+git commit -m "Güncelleme Başlığı" ---
+git branch -M main --- branch 
+git remote add origin [URL] --- REPO url
+git push -u origin main
+
+GİT Push:
+git remote add origin [URL] ---
+git branch -M main
+git push -u origin main
+
+
+
+
+
+
+
 
