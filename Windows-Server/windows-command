@@ -1,2 +1,7 @@
 mkdir "folder" --- klasör oluştur
-dir --- 
+cd --- klasöre gitmek
+dir --- klasörleri listele
+git -v --- versiyon kontrolü git
+git clone https://github.com/kemalcankrlsn/system-support-specialist-skills.git --- repo yu getirme
+cls --- ekran temizleme
+
