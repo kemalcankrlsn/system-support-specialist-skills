@@ -6,7 +6,7 @@ cls --- ekran temizleme
 GİT Kontrolleri:
 git -v --- versiyon kontrolü git
 git status --- dosyaların durumları git ile pc arasında kontrol ediyor
-
+git remote -v --- 
 
 GİT Repoyu Getirme:
 git clone https://github.com/kemalcankrlsn/system-support-specialist-skills.git --- repo yu getirme
