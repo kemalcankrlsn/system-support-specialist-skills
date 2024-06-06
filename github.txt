@@ -1,2 +1,0 @@
-git init --- .git oluşturuyor
-git status --- dosyaların durumları git ile pc arasında kontrol ediyor
