@@ -1,29 +1,26 @@
-mkdir "folder" --- klasör oluştur
-cd --- klasöre gitmek
-dir --- klasörleri listele
-cls --- ekran temizleme
+Windows CLI:
+mkdir "folder"                      --- klasör oluştur
+cd                                  --- klasöre gitmek
+dir                                 --- klasörleri listele
+cls                                    --- ekran temizleme
 
-GİT Kontrolleri:
-git -v --- versiyon kontrolü git
-git status --- dosyaların durumları git ile pc arasında kontrol ediyor
-git remote -v --- 
+Git Kontrolleri:
+git -v                              --- versiyon kontrolü git
+git status                          --- dosyaların durumları git ile pc arasında kontrol ediyor
+git remote -v                       --- 
 
-GİT Repoyu Getirme:
-git clone https://github.com/kemalcankrlsn/system-support-specialist-skills.git --- repo yu getirme
+Git Create New Repo and Push:
+git clone [URL]                     --- repo yu getirme
+git init                            --- .git oluşturuyor
+git branch -M main                  --- branch 
+git remote add origin [URL]         --- REPO url
 
 
-GİT Create New Repo and Push:
-git init --- .git oluşturuyor
-git add * --- tüm dosyaları ekleme
-git commit -m "Güncelleme Başlığı" ---
-git branch -M main --- branch 
-git remote add origin [URL] --- REPO url
-git push -u origin main
-
-GİT Push:
-git add * --- tüm dosyaları ekleme
-git commit -m "Güncelleme Başlığı" ---
-git push -u origin main
+Git Push Adımları:
+git status                          --- Dosyaları kontrol etme işlemi
+git add *                           --- Tüm Dosyaları repoya pushlamak için eklemek
+git commit -m "Güncelleme Başlığı"  --- Güncelleme-Yama başlığı
+git push -u origin main             --- Dosyaları pushlamak
 
 
 
