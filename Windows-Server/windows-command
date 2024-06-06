@@ -21,10 +21,9 @@ git remote add origin [URL] --- REPO url
 git push -u origin main
 
 GİT Push:
-git remote add origin [URL] ---
-git branch -M main
+git add * --- tüm dosyaları ekleme
+git commit -m "Güncelleme Başlığı" ---
 git push -u origin main
-
 
 
 
