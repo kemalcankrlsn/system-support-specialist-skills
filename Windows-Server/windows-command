@@ -1,10 +1,14 @@
 mkdir "folder" --- klasör oluştur
 cd --- klasöre gitmek
 dir --- klasörleri listele
+cls --- ekran temizleme
+
 git -v --- versiyon kontrolü git
 git clone https://github.com/kemalcankrlsn/system-support-specialist-skills.git --- repo yu getirme
-cls --- ekran temizleme
+
+
 git init --- .git oluşturuyor
 git status --- dosyaların durumları git ile pc arasında kontrol ediyor
 git add * --- tüm dosyaları ekleme
+git commit -m "first update" ---
 
