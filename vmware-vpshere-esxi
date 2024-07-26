@@ -1,1 +1,29 @@
-vmware ile ilgili
+VMware ESXi Nedir?
+VMware ESXi, kurumsal seviyede bir hypervisor (sanallaştırma platformu) olup, fiziksel sunucular üzerinde birden fazla sanal makine (VM) çalıştırmanıza olanak tanır. ESXi, işletim sistemi seviyesinde çalışmaz; bunun yerine, doğrudan donanım üzerinde çalışarak kaynakları daha verimli bir şekilde yönetir.
+
+Kullanım Amaçları:
+
+Fiziksel donanımı konsolide etmek ve maliyetleri azaltmak
+Sunucu kaynaklarının daha verimli kullanımı
+Yüksek kullanılabilirlik ve felaket kurtarma çözümleri sağlamak
+Veri merkezlerinde sanal altyapı oluşturmak
+VMware vCenter Nedir?
+VMware vCenter, VMware ESXi sunucularının merkezi yönetimini sağlayan bir yazılımdır. vCenter, birden fazla ESXi sunucusunu ve üzerinde çalışan sanal makineleri tek bir arayüzden yönetmenize olanak tanır.
+
+Kullanım Amaçları:
+
+Sanal makinelerin ve ESXi sunucularının merkezi yönetimi
+Kaynak dağıtımı ve yük dengeleme
+Yedekleme, geri yükleme ve felaket kurtarma
+Performans izleme ve raporlama
+Rol tabanlı erişim kontrolü ve izin yönetimi
+VMware Workstation Nedir?
+VMware Workstation, masaüstü bilgisayarlar için geliştirilmiş bir sanallaştırma yazılımıdır. Bu yazılım, kullanıcıların tek bir fiziksel bilgisayar üzerinde birden fazla sanal makine çalıştırmasına olanak tanır.
+
+Kullanım Amaçları:
+
+Geliştiriciler ve IT profesyonelleri için test ve geliştirme ortamları oluşturma
+Farklı işletim sistemleri ve uygulamaların bir arada çalıştırılması
+Eğitim ve öğretim amaçlı sanal ortamlar kurma
+Mevcut sistemleri bozmadan yeni yazılımları deneme
+Bu VMware ürünleri, farklı sanallaştırma ihtiyaçlarına yönelik olarak tasarlanmıştır ve her biri belirli kullanım senaryolarına hitap eder.
