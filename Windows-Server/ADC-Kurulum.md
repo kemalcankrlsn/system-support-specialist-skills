@@ -28,3 +28,5 @@
 - RID pool manager	-- RID Master – SID leri tutuyor clientlerin kimlik no ları  
 - Infrastructure master       -- Ortamdaki objelerin güncellemelerini tutuyor
 - PDC 			-- ortamdaki zaman saat ayarları
+
+- 
