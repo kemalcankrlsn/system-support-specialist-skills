@@ -29,4 +29,10 @@
 - Infrastructure master       -- Ortamdaki objelerin güncellemelerini tutuyor
 - PDC 			-- ortamdaki zaman saat ayarları
 
-- 
+## Kurulum Adımları:
+- Active Directory Domain Servisi Yedekliyoruz, ADC Kurarak.
+- ADC Serverini kuruyoruz, ve DC mizin domainine dahil ediyoruz.
+-  DC admini ile giriş yapıyoruz.
+-  Server Manager üzerinden AD DS servisini kuruyoruz.
+-  AD servisi kurulduktan sonra Domain Controller dan ADC ayarlarını yapıyoruz.
+-  
