@@ -1,4 +1,4 @@
-# Active Directory Domain Controller Rolleri
+# Active Directory Domain Controller FSMO Rolleri
 
 ## 1. Schema Master (Şema Yöneticisi)
 - **Görev:** Active Directory şemasında yapılan tüm güncellemeleri ve değişiklikleri yönetir.
@@ -20,14 +20,18 @@
 - **Görev:** Etki alanındaki nesnelerin ad değişikliklerini ve grup üyeliklerini günceller.
 - **Ne İşe Yarar:** Bir etki alanındaki nesne referanslarının başka bir etki alanındaki nesne referanslarına güncellenmesini sağlar.
 
-## ADC:
-- AD Rollerin kontrolü “netdom query fsmo” 
-- Domainde Tek Roller;
-- Schema master  		-- Domaindeki objelerin hangi şablona göre olmasını belirtiyor
-- Domain naming master 	– Ortamdaki domain name leri yönetiyor
-- RID pool manager	-- RID Master – SID leri tutuyor clientlerin kimlik no ları  
-- Infrastructure master       -- Ortamdaki objelerin güncellemelerini tutuyor
-- PDC 			-- ortamdaki zaman saat ayarları
+## ADC FSMO:
+- AD Rollerin kontrolü “netdom query fsmo”
+- 
+- Schema master  		    -- Bu rol forest içerisinde tekdir. 
+- Domain naming master 	-– Bu rol forest içerisinde tekdir.
+
+- PDC Emulator          -- Domainde 1 adet, Forestte Birden fazla olabilir. Domainde en çok yorulan roldür, şifre değişikleri,şifre resetleme, saat sync sorumlu, gpo,sysvol erişimlerini bu rol yönetiyor. 
+- RID pool manager	    -- Domainde 1 adet, Forestte Birden fazla olabilir. Domaindeki tüm objelerin SID gibi bir RID numaraları var bunları yöneten FSMO rolüdür.
+- Infrastructure master -- Domainde 1 adet, Forestte Birden fazla olabilir. OU lar arasında değişiklikler yapıldığında yol değişiklikleri yer değişikliklerini üzerinde tutan FSMO rolü.
+  
+- Schema Master ve Domain Naming Master kurulu olduğu makine Primary Domain Controller (PDC) oluyor.
+- 
 
 ## Kurulum Adımları:
 - Active Directory Domain Servisi Yedekliyoruz, ADC Kurarak.
@@ -35,4 +39,7 @@
 -  DC admini ile giriş yapıyoruz.
 -  Server Manager üzerinden AD DS servisini kuruyoruz.
 -  AD servisi kurulduktan sonra Domain Controller dan ADC ayarlarını yapıyoruz.
+-  ADC de yapılan değişiklikler 30sn1dk arasında geliyor bu değişikleri manuel hızlandırmak için
+-  AD Sites and Services altında NTDS Setting ile hızlandırabiliriz.
+-  FSMO Rolleri paylaşımı (Flexible Single Master Operation)
 -  
