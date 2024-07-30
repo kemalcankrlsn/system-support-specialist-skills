@@ -19,3 +19,12 @@
 ## 5. Infrastructure Master (Altyapı Yöneticisi)
 - **Görev:** Etki alanındaki nesnelerin ad değişikliklerini ve grup üyeliklerini günceller.
 - **Ne İşe Yarar:** Bir etki alanındaki nesne referanslarının başka bir etki alanındaki nesne referanslarına güncellenmesini sağlar.
+
+## ADC:
+- AD Rollerin kontrolü “netdom query fsmo” 
+- Domainde Tek Roller;
+- Schema master  		-- Domaindeki objelerin hangi şablona göre olmasını belirtiyor
+- Domain naming master 	– Ortamdaki domain name leri yönetiyor
+- RID pool manager	-- RID Master – SID leri tutuyor clientlerin kimlik no ları  
+- Infrastructure master       -- Ortamdaki objelerin güncellemelerini tutuyor
+- PDC 			-- ortamdaki zaman saat ayarları
