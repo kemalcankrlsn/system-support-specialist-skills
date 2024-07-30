@@ -27,11 +27,11 @@
 - Domain naming master 	-– Bu rol forest içerisinde tekdir.
 
 - PDC Emulator          -- Domainde 1 adet, Forestte Birden fazla olabilir. Domainde en çok yorulan roldür, şifre değişikleri,şifre resetleme, saat sync sorumlu, gpo,sysvol erişimlerini bu rol yönetiyor. 
-- RID pool manager	    -- Domainde 1 adet, Forestte Birden fazla olabilir. Domaindeki tüm objelerin SID gibi bir RID numaraları var bunları yöneten FSMO rolüdür.
-- Infrastructure master -- Domainde 1 adet, Forestte Birden fazla olabilir. OU lar arasında değişiklikler yapıldığında yol değişiklikleri yer değişikliklerini üzerinde tutan FSMO rolü.
+- RID Pool Manager	    -- Domainde 1 adet, Forestte Birden fazla olabilir. Domaindeki tüm objelerin SID gibi bir RID numaraları var bunları yöneten FSMO rolüdür.
+- Infrastructure Master -- Domainde 1 adet, Forestte Birden fazla olabilir. OU lar arasında değişiklikler yapıldığında yol değişiklikleri yer değişikliklerini üzerinde tutan FSMO rolü.
   
 - Schema Master ve Domain Naming Master kurulu olduğu makine Primary Domain Controller (PDC) oluyor.
-- 
+- PDC Emulator,RID Pool Manager, Infrastructure Master bunların kurulu olduğu makine (SDC) oluyor yani ADC gibi.
 
 ## Kurulum Adımları:
 - Active Directory Domain Servisi Yedekliyoruz, ADC Kurarak.
