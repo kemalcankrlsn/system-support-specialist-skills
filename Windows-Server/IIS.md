@@ -1,1 +1,2 @@
-https://www.youtube.com/watch?v=aT5Sh6YPpzk
+- https://www.youtube.com/watch?v=aT5Sh6YPpzk
+- dns manager de host a 192.168.16.12 oldugu için "kemalck.com" çalışmıyor ns1.kemalck.com adında bir sunucu kurulması lazım
