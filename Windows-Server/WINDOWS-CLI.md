@@ -2,8 +2,7 @@
 
 ## Windows
 
-- `netstat -r`
-  - Port tablosunu görüntülemek için bir Windows ana bilgisayarında kullanılabilir.
+- `netstat -r` Port tablosunu görüntülemek için bir Windows ana bilgisayarında kullanılabilir.
 
 - `ipconfig /displaydns`
   - Kayıtlı olan DNS sunucularını gösterir.
