@@ -1,0 +1,1 @@
+konuya derinlemesine inilecek
