@@ -42,4 +42,8 @@
 -  ADC de yapılan değişiklikler 30sn1dk arasında geliyor bu değişikleri manuel hızlandırmak için
 -  AD Sites and Services altında NTDS Setting ile hızlandırabiliriz.
 -  FSMO Rolleri paylaşımı (Flexible Single Master Operation)
--  
+
+## FSMO Rolleri Taşıma:
+- win+r ile mmc konsolu açıyoruz.
+- win+r ile "regsvr32 schmmgmt.dll" çalıştırıyoruz ve mmc ye schema consol u geliyor.
+- 
