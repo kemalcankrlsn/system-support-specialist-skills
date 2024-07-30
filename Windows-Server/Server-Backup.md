@@ -1,0 +1,3 @@
+- Windows Server Backup uygulamasını kullanmayacağız tüm yapıyı kurduktan sonra
+- [veeam backup 12](https://www.youtube.com/watch?v=TRGeVpfRTKc&list=PLx9CclV47ioiUfzngSqZEb5nrM8WL7-Sq)
+- linki üzerinden veeam backup  kullanacağız.
