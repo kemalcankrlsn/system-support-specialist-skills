@@ -7,5 +7,6 @@ https://www.ajtek.ca/wsus/wsus-post-deployment-configuration-failed-windows-serv
 
 
 WSUS MANUEL IMPORT
-
+https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Windows-Server/SCRIPT/ImportUpdateToWSUS.ps1 -- BU SCRİPTİ C:\temp\ altına koyuyoruz
+https://www.catalog.update.microsoft.com/Home.aspx
 https://www.cozumpark.com/powershell-ile-wsusa-guncelleme-paketi-yukleme/
