@@ -6,5 +6,6 @@ The schema version of the database is from a newer version of WSUS than currentl
 https://www.ajtek.ca/wsus/wsus-post-deployment-configuration-failed-windows-server-2022/
 
 
-wsus manuel 
+WSUS MANUEL IMPORT
+
 https://www.cozumpark.com/powershell-ile-wsusa-guncelleme-paketi-yukleme/
