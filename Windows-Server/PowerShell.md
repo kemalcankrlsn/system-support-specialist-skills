@@ -1,1 +1,1 @@
--update-help
+- 'update-help' PowerShell 'Get-Help' servisini kullanmak için 
