@@ -24,9 +24,8 @@ OU=IT,OU=Users,OU=KEMALCK,DC=kemalck,DC=com ---- AD deki tüm kullanıcıları g
 
 `Get-ADOrganizationalUnit -SearchBase 'OU=IT,OU=Users,OU=KEMALCK,DC=kemalck,DC=com' -SearchScope OneLevel -Filter * | FT Name, DistinguishedName -A` IT ou su altındaki tüm ou ları getir
 
+Update-Help -Verbose -Force -ErrorAction SilentlyContinue ---- Verbose bilgi veriyor force zorla error action slient hataları geçiyor
 
-Toplu Kullanıcı oluşturma, excel üzerinden;
-https://www.firatboyan.com/active-directory-de-script-ile-toplu-kullanici-nesneleri-olusturma.aspx
 
 
 
