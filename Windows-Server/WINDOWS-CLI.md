@@ -20,6 +20,9 @@
 - `optionalfeatures` Windows özelliklerini açar, program ekle/kaldır menüsüne girer.
 - `ncpa.cpl` Network yönetimini açar.
 - `nslookup/set type=all/kemalck.com` Gelişmiş DNS sorgusu.
+- `cleanmgr` Disk kurtarma alanı
+- `winver` windows versionu gösterir
+- `systeminfo` cmd den bu kodu girince detaylı windows versiyonu ve pc bilgileri
 
 ## Server
 
