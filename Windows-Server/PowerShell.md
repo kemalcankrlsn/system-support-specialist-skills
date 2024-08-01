@@ -1,1 +1,6 @@
-- 'update-help' PowerShell 'Get-Help' servisini kullanmak için 
+# Windows PowerShell
+
+## Komutlar
+
+- `update-help` powershell güncellemek için
+-  
