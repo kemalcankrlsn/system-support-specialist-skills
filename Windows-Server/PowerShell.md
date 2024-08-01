@@ -5,4 +5,5 @@
 - ` update-help ` powershell güncellemek için
 - " Get-service " servisleri görüntülemeye yarıyor
 - " Get-Command *service* " içinde service komutu olan tüm komutları getir
--  
+-  $PSVersionTable.PSVersion - powershel sürümünü kontrol etme
+
