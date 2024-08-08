@@ -1,4 +1,6 @@
 konuya derinlemesine inilecek
+https://www.youtube.com/watch?v=GSdK1fc8BfM
+
 WSUS Kurulumunu yapamadım post-deployment i geçemiyorum
 
 The schema version of the database is from a newer version of WSUS than currently installed. You must either patch your WSUS server to at least that version or drop the database

@@ -40,3 +40,13 @@
 
 - `netdom query fsmo`
   - DC'nin rollerini gösterir.
+
+
+netsh interface show interface - Ağ Bağlantılarınızı Listeleyin
+netsh interface set interface "Bağlantı_Adı" admin=enable - Belirli Bir Ağ Bağlantısını Aktif Etme
+netsh interface set interface "Bağlantı_Adı" admin=disable - devre dışı
+
+
+
+
+https://www.donanimhaber.com/windows-cmd-komutlari-ve-kodlari--160039
