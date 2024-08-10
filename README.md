@@ -7,7 +7,7 @@ Bu depo, sistem destek uzmanı için Cisco, Fortigate, Veeam Backup, VMware ve W
 
 ## Table of Contents
 
-- [Cisco](#cisco)
+- [Cisco](https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Cisco/readme.md)
 - [Fortigate Firewall](#fortigate-firewall)
 - [Github](#github)
 - [Veeam Backup](#veeam-backup)
