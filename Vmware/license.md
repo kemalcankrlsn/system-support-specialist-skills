@@ -55,3 +55,6 @@ Free VMware license keys, they should work. Works for all cores of your host sys
 | Key                                           | Tested  |
 |-----------------------------------------------|---------|
 | 4A4RR-813DK-M81A9-4U35H-06KND                 | ✅       |
+
+
+Source: https://gist.github.com/ayebrian/646775424393c9a35fb8257f44df1c8b
