@@ -21,14 +21,14 @@
 
 [TOC]
 
-#H1 header
-##H2 header
-###H3 header
-####H4 header
-#####H5 header
-######H6 header
-#Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")
-##Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+# H1 header
+## H2 header
+### H3 header
+#### H4 header
+##### H5 header
+###### H6 header
+# Heading 1 link [Heading link](https://github.com/pandao/editor.md "Heading link")
+## Heading 2 link [Heading link](https://github.com/pandao/editor.md "Heading link")
 ###Heading 3 link [Heading link](https://github.com/pandao/editor.md "Heading link")
 ####Heading 4 link [Heading link](https://github.com/pandao/editor.md "Heading link") Heading link [Heading link](https://github.com/pandao/editor.md "Heading link")
 #####Heading 5 link [Heading link](https://github.com/pandao/editor.md "Heading link")
@@ -100,7 +100,7 @@ Code Blocks (Preformatted text):
     | Content Cell  | Content Cell  |
     | Content Cell  | Content Cell  |
 
-####Javascript　
+#### Javascript　
 
 ```javascript
 function test(){
@@ -141,7 +141,7 @@ var testBox = box();
 testBox.add("jQuery").remove("jQuery");
 ```
 
-####HTML code
+#### HTML code
 
 ```html
 <!DOCTYPE html>
@@ -156,7 +156,7 @@ testBox.add("jQuery").remove("jQuery");
 </html>
 ```
 
-###Images
+### Images
 
 Image:
 
@@ -241,7 +241,7 @@ Content Cell  | Content Cell
                 
 ----
 
-####HTML entities
+#### HTML entities
 
 &copy; &  &uml; &trade; &iexcl; &pound;
 &amp; &lt; &gt; &yen; &euro; &reg; &plusmn; &para; &sect; &brvbar; &macr; &laquo; &middot; 
@@ -250,13 +250,13 @@ X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;
 
 18&ordm;C  &quot;  &apos;
 
-##Escaping for Special Characters
+## Escaping for Special Characters
 
 \*literal asterisks\*
 
-##Markdown extras
+## Markdown extras
 
-###GFM task list
+### GFM task list
 
 - [x] GFM task list 1
 - [x] GFM task list 2
@@ -282,7 +282,7 @@ X&sup2; Y&sup3; &frac34; &frac14;  &times;  &divide;   &raquo;
     - [ ] :smiley: this is an incomplete item [test link](#) :fa-star: :fa-gear:;
     - [ ] :smiley: this is  :fa-star: :fa-gear: an incomplete item [test link](#);
             
-###TeX(LaTeX)
+### TeX(LaTeX)
    
 $$E=mc^2$$
 
