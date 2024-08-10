@@ -7,12 +7,12 @@ Bu depo, sistem destek uzmanı için Cisco, Fortigate, Veeam Backup, VMware ve W
 
 ## Table of Contents
 
-- [Cisco](https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Cisco/readme.md)
-- [Fortigate Firewall](#fortigate-firewall)
-- [Github](#github)
-- [Veeam Backup](#veeam-backup)
-- [VMware](#vmware)
-- [Windows Server](#windows-server)
+- [Cisco](https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Cisco/README.md)
+- [Fortigate Firewall](https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Fortigate%20Firewall/README.md)
+- [Github](https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Github/README.md)
+- [Veeam Backup](https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Veeam%20Backup/README.md)
+- [VMware](https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Vmware/README.md)
+- [Windows Server](https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Windows%20Server/README.md)
 - [Other Files](#other-files)
 
 ## Cisco
