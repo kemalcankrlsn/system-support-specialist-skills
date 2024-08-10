@@ -10,3 +10,5 @@ MOTTO
 
 
 ![image](https://github.com/user-attachments/assets/6c4d387e-dd53-4f81-b561-b01456c235b7)
+
+![alt text](image.png)
