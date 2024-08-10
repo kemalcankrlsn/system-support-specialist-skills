@@ -8,7 +8,10 @@ Merhabalar router a ssh yapmak istedik aşağıdaki hatayı aldık.
 ```
 ssh -o KexAlgorithms=+diffie-hellman-group14-sha1 admin@192.168.1.15
 ```
+
+```
 ssh -o KexAlgorithms=+diffie-hellman-group-exchange-sha1 admin@192.168.1.15
+```
 
 Router Tarafında;
 RouterName(config)# ip ssh server algorithm mac hmac-sha2-256 hmac-sha2-512
