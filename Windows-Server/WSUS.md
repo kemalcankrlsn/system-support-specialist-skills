@@ -13,3 +13,10 @@ https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Wind
 https://www.catalog.update.microsoft.com/Home.aspx
 https://www.cozumpark.com/powershell-ile-wsusa-guncelleme-paketi-yukleme/
 https://www.ajtek.ca/wsus/how-to-get-wsus-report
+
+
+## WSUS Kurulum ve Yapılandırılması
+
+1. **1. Adım**
+    - deneme
+    > NOT: deneeme
