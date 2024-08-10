@@ -34,4 +34,9 @@
     - Alınan yedeklerin geri yüklenmesi işlemi burada yapılır.
 
 6. **Backup Restore İşlemleri**
-    - asd
+    - Instant recovery - vCenter, hypervisor yapısı olmadan bunu kullanamiyoruz deneyeceğiz sonrasında.
+    - Volume restore - Buradaki sorun canlı çalışan sisteme yükleme yapamıyor yedekleme için disk istiyor bu kurtarma çeşidine sonra bakacağım.
+    - Restore quest files - Dosya bazlı kurtarma yapabiliyoruz istediğimiz bir dosyayı kurtarabiliyoruz.
+    - Restore application items - AD active directory altında GPO ve OU ları görebiliyoruz yedekleyebiliyoruz.
+    - Create recovery media - media diski oluşturuyoruz çökmüş makinayı öyle kurtardık.
+
