@@ -1,22 +1,26 @@
-konuya derinlemesine inilecek
-https://www.youtube.com/watch?v=GSdK1fc8BfM
-
-WSUS Kurulumunu yapamadım post-deployment i geçemiyorum
-
-The schema version of the database is from a newer version of WSUS than currently installed. You must either patch your WSUS server to at least that version or drop the database
-üstteki hatayı aldım aşağıdaki çözümü deniyorum
-https://www.ajtek.ca/wsus/wsus-post-deployment-configuration-failed-windows-server-2022/
-
-
-WSUS MANUEL IMPORT
-https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Windows-Server/SCRIPT/ImportUpdateToWSUS.ps1 -- BU SCRİPTİ C:\temp\ altına koyuyoruz
-https://www.catalog.update.microsoft.com/Home.aspx
-https://www.cozumpark.com/powershell-ile-wsusa-guncelleme-paketi-yukleme/
-https://www.ajtek.ca/wsus/how-to-get-wsus-report
-
-
 ## WSUS Kurulum ve Yapılandırılması
 
-1. **1. Adım**
-    - deneme
-    > NOT: deneeme
+1. ### 1. Adım :Kurulum Add Roles and Features
+    - WSUS Kurulumunu yapıyoru add roles and features tarafından ve deployment hatası almamak için 
+    - "\system-support-specialist-skills\Windows Server\Errors\WSUS-Deployment-Failed.md" dosyasına bakıyoruz. VersionCheck.sql dosyasında 11 olan satırı 51 yapıyoruz. Bunun için bi script var onu çalıştırıyoruz
+2. 
+
+
+
+
+
+
+
+
+ - WSUS VİDEO 1: https://www.youtube.com/watch?v=GSdK1fc8BfM
+ - WSUS VİDEO 2: https://www.youtube.com/watch?v=VTCzszyiFz4
+
+## WSUS MANUEL IMPORT
+- https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Windows-Server/SCRIPT/ImportUpdateToWSUS.ps1 -- BU SCRİPTİ C:\temp\ altına koyuyoruz
+
+- https://www.catalog.update.microsoft.com/Home.aspx
+- https://www.cozumpark.com/powershell-ile-wsusa-guncelleme-paketi-yukleme/
+- https://www.ajtek.ca/wsus/how-to-get-wsus-report
+
+
+
