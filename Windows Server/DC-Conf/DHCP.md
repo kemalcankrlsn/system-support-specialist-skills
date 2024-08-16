@@ -1,28 +1,11 @@
-Dhcp nedir? Otomatik ip dağıtma protocolü
-Dynami host configuration protokol
-Neler yapabiliriz;
-•	IP Lere süre verebiliriz
-•	Otomatik IP Verebiliriz
-
-Rol Ekleme DHCP Ekleme;
-DHCP Server Seçtik
-Ad Roles and Features den dhcp kurduk sonra Yapılandırma yapacağız
-
+## DHCP Manager Kurulum ve Yapılandırma:
+Rol Ekleme DHCP Ekleme; DHCP Server Seçtik ,Ad Roles and Features den dhcp kurduk sonra Yapılandırma yapacağız
 Önce “scope” oluşturmamız lazım.
 Server Manager > Tools > DHCP Açtık
 IPv4 Üzerinden önce “scope” oluşturmamız lazım.
 IPv4 Sağ tıklayıp “New Scope” dedik
 Kategorize etmek için Name ve Desc düzenliyoruz
 Not: 192.168.10.1-192.168.10.255 aralığındaki ağ 192.168.10.0 ağı diyoruz. 0 dediğimiz zaman O aralıktaki tüm IP ler.
-
-Bölüm 5: DHCP
-
-Active Directory:
-Additional Domain Controller:
-
- 
- 
-
 192.168.10.255 Ağı broadcast adresidir.
 192.168.10.1 Default Gateway dir, Çıkış kapısı, Dışarıya çıkış kapısı internete çıkış kapısı. Default gateway ler her zaman ilk ıp yi kullanır.
  

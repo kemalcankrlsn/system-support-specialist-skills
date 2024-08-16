@@ -39,6 +39,7 @@ bu satırın int (11) değeri 51 ile değiştiğini görüyoruz.
 ## WSUS 0% SYNC Hatası:
 1. WSUS kurulumundan sonra "Update Services -> WSUS" ana ekranında sync %0 da kalıyor yaptığım işlemleri not alıyorum.
 2. Güvenlik duvarını kaldırdım.
+3. Server Manager->WSUS->Services altında WSUS Cert Server ve WSUS Server servislerini başlatıyoruz.
 
 
 ## WSUS MANUEL IMPORT
