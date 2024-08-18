@@ -1,0 +1,11 @@
+## Kullanılacak Teknolojiler:
+- Subneting
+- Sw-Rt Configure ssh 
+- static routing
+- router loopback 
+- port hız ayarları.
+- 
+- Vlan ve trunk yapıları
+- 
+- DHCP, DNS, NAT basics
+- 
