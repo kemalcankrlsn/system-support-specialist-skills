@@ -3,7 +3,7 @@
 2. Güvenli Giriş: Güvenli giriş yöntemlerinin oluşturulması.
     - Enable/ssh/telnet Tüm parolaların farklılaştırılması
     - Enable Parolası Değiştirilmesi
-    - `Switch(config)# login block-for 600 attempts 3 within 60` deneme
+    - ```Switch(config)# login block-for 600 attempts 3 within 60``` deneme
     - SSH "crypto key generate rsa" 2048 ile daha güçlü şifreleme
     - "ip ssh version 2" uygulaması
     - "exec-timeout" ssh/telnet için zaman aşımı uygulaması
