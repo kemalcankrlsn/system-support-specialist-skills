@@ -40,7 +40,7 @@
 - Switch(config)#enable password cisco (enable parolası belirledik.)
 
 
-## Switch Telnet Ayarları:
+## Switch Telnet/SVI Ayarları:
 - Switch>en
 - Switch#conf t
 - Switch(config)#interface vlan 1
@@ -77,13 +77,18 @@
 > IP SSH gücü 1024 normal 2048 daha güçlü kriptolama işlemi, ip ssh version 2 de güncel olan versiyon seçiyoruz.line vty de sonrasında da yazabiliriz.
 
 
-
 ## Ayarları Sw-Router Kayıt Etme
-- Switch#show running-config 				= YAPTIĞIMIZ "RAM" KAYITLI YAPTIĞIMIZ İŞLER
-- Switch#show startup-config 				= ROM kayıtlı işlerimiz yani 
 - Switch#copy running-config startup-config 		= running-config den startup config e kopyalama işlemi
 -  Switch#wr 
 
+## SWİTCH SHOW Komutları:
+- Switch# show clock 				        --- Cihaz Saatini görüyoruz
+- Switch#show running-config               --- Running config görmek
+- Switch#show startup-config             --- başlangıç dosyası görmek
+- Switch#show ip interface brief --- Kısaca portların durumlarını gösteriyor.
+- Switch#show mac-address-table --- iletişimde olduğu mac adres tablosunu görmek
+- Switch#clear mac address-table --- temizleme
+- DC-SW#show running-config | include username --- kullanıcıları görmek
 
 ## BAŞLANGIÇ SWİTCH AYARLARI:
 en
