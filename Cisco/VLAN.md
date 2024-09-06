@@ -63,7 +63,7 @@ Transparent Mode: Bu modda switch, kendi lokal VLAN yapılandırmasını saklar 
 2. TRUNK HATTI OLUŞTURMAK:
     - Switch(config)# interface gigabitEthernet 0/1
     - Switch(config-if)# switchport mode trunk
-    - Switch(config-if)#switchport trunk allowed vlan 10,20,51,99,110,120 --- SADECE 10,20 Vlanları geçer
+    - Switch(config-if)# switchport trunk allowed vlan 10,20,51,99,110,120 --- SADECE 10,20 Vlanları geçer
     - Switch(config-if)# switchport trunk native vlan 99 --- native vlan 99 oluyor
     - Switch(config-if)# switchport nonegotiate --- dtp kapatma
       
@@ -101,10 +101,10 @@ Transparent Mode: Bu modda switch, kendi lokal VLAN yapılandırmasını saklar 
 
 3. PORT GÜVENLİĞİ - KULLANILMAYAN PORTLAR
     - Switch(config)#int range fa0/4-24
-    - Switch(config-if-range)#switchport mode access
+    - Switch(config-if-range)#switchport mode access --- modu elle yapılandırdık
     - Switch(config-if-range)#switchport nonegotiate --- dtp kapatma
-    - Switch(config-if-range)#switchport access vlan 999
-    - Switch(config-if-range)#shutdown 
+    - Switch(config-if-range)#switchport access vlan 999 --- karadelik vlan ı na atadık
+    - Switch(config-if-range)#shutdown  --- portu kapattık
 
 
 
@@ -114,8 +114,9 @@ Transparent Mode: Bu modda switch, kendi lokal VLAN yapılandırmasını saklar 
     - Switch(config)# vlan 51
     - Switch(config-vlan)# name Management_VLAN
     - Switch(config)# interface vlan 51
-    - Switch(config-if)# ip address 192.168.10.1 255.255.255.0
-    - Switch(config)# interface gigabitEthernet 0/1
+    - Switch(config-if)#ip address 192.168.3.10 255.255.0.0
+    - Switch(config)# interface fa0/3
+    - Switch(config-if)# switchport mode access
     - Switch(config-if)# switchport access vlan 51
 
 
