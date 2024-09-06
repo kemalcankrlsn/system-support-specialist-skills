@@ -16,6 +16,7 @@
     - `Switch(config)# interface range fa0/1–3` `Switch(config-if-range)# shutdown` Kullanılmayan portların kapatılması
     - Vlan Hopping saldırısını önlemek için MAC Adress kısıtlama veya belirli mac adreslerine izin vermek `Switch(config-if)# switchport port-security maximum 2`
     - Yetkisiz kişinin bağlanması halinde portun kapatılması (PORT NAC) `Switch(config-if)# switchport port-security - Switch(config-if)# switchport port-security violation shutdown`
+    - DTP ' nin kullanılmayan portlarda kapatılması trunk ın elle yapılandırılması
 4. Native VLAN : Native VLAN değiştirrerek trunk hatları üzerinden geçen vlan 1 kullanımına kapatıyoruz. `Switch(config-if)# switchport trunk native vlan 100`
 5. VTP (VLAN Trunk Protocol) : VTP kapatılması vlanların elle girilmesi. `Switch(config)# vtp mode transparent`
 6. Kullanılmayan servislerin kapatılması;
