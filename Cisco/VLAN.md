@@ -132,4 +132,11 @@ Switch#show interfaces gi0/1 status --- status olarak görmek
 Switch#show vtp status --- vtp görmek
 Switch#show ip interface brief  ---- int lerin ip adreslerini görmek
 
-
+## NELER YAPTIK;
+vlanleri oluşturduk
+trunk hattını oluşturduk, alloved vlan ve native vlan seçtik
+trunk harici portları access yaptık ve dtp kapattık
+vtp server oluşturduk sonra diğer switchlerde önce client yaptık vlanleri aldık sonra transparent yaptık
+kullanılan portlara vlan leri ve voice vlanleri atadık
+kullanılmayan portları kapattık ve unused vlan e atadık
+management vlan svi oluşturduk
