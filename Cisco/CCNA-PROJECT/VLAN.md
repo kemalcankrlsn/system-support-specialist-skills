@@ -17,7 +17,7 @@ Default VLAN - VLAN 1(1)
 Native VLAN (99)
 Management VLAN (51-200)
 Voice VLAN (100-150)
-Unused Vlan (999)
+BlackHole Vlan (999)
 
 10   DATA-VLAN-10                     active    
 20   DATA-VLAN-20                     active    
@@ -25,7 +25,7 @@ Unused Vlan (999)
 99   NATIVE-VLAN                      active    
 110  VOICE-VLAN-110                   active    
 120  VOICE-VLAN-120                   active    
-999  UNUSED-VLAN                      active 
+999  BlackHole-VLAN                   active 
  
 
 
@@ -127,6 +127,7 @@ Switch#show interfaces switchport --- tüm portları görmek
 Switch#show interfaces gi0/1 status --- status olarak görmek
 Switch#show vtp status --- vtp görmek
 Switch#show ip interface brief  ---- int lerin ip adreslerini görmek
+Switch#show cdp neighbors --- komşuları görme
 
 ## NELER YAPTIK;
 vlanleri oluşturduk

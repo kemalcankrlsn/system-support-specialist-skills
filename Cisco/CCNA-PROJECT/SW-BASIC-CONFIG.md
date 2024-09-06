@@ -1,12 +1,16 @@
-## SWİTCH Genel Config Kodları:
-- Switch# clock set 08:10:50 29 August 2023 	--- zamanı ayarla
+## SWİTCH Teknolojisi Kullanım:
 - Switch# reload 					--- sw yeniden başlat
-- Switch(config)#no ip domain-lookup ---Bilgi: Bu komut ile ip domain sorgusunu kapatıyoruz. CTRL+SHIFT+6 ile de sorgu esnasında kapatabiliyoruz.
-- Switch(config)#ip default-gateway 192.168.1.1 --- Default Gateway
+- Switch#reload --- cihazı yeniden başlatma
 - Switch#end -- enable ekranına götürür
 - Switch>exit veya Switch>logout --- cihazdan çıkış yapar
-- Switch#reload --- cihazı yeniden başlatma
 
+
+# SIRASIYLA ; >
+
+## SWİTCH Genel Config Kodları:
+- Switch# clock set 08:10:50 29 August 2023 	--- zamanı ayarla
+- Switch(config)#no ip domain-lookup ---Bilgi: Bu komut ile ip domain sorgusunu kapatıyoruz. CTRL+SHIFT+6 ile de sorgu esnasında kapatabiliyoruz.
+- Switch(config)#ip default-gateway 192.168.1.1 --- Default Gateway
 
 ## CISCO Kullanıcı Modları
 - Switch> 					(User Executive Mode) 
@@ -17,7 +21,6 @@
 - enable - user privilege mode
 - disable - user privilege mode dan çıkma
 
-# SIRASIYLA ; >
 ## Hostname
 - Switch(config)#hostname DC-SW
 
@@ -28,6 +31,7 @@
 - Switch(config)#line console 0
 - Switch(config-line)#password cisco
 - Switch(config-line)#exec-timeout 3 30
+- Switch(config-line)#logging synchronous 
 - Switch(config-line)#login local
 - Switch(config-line)#end
 > Bilgi: exec-timeout 3 30 = 3dakika30saniye işlem olmaz ise kapat.
