@@ -67,7 +67,7 @@ Transparent Mode: Bu modda switch, kendi lokal VLAN yapılandırmasını saklar 
     - Switch(config-if)# switchport trunk native vlan 99 --- native vlan 99 oluyor
     - Switch(config-if)# switchport nonegotiate --- dtp kapatma
       
-3. DTP KAPATMA
+3. DTP KAPATMA-PORTLARI ACCESS MOD A ÇEKME
     - Switch(config)#int range fa0/1-24
     - Switch(config-if-range)#switchport mode access
     - Switch(config-if-range)#switchport nonegotiate
@@ -99,18 +99,14 @@ Transparent Mode: Bu modda switch, kendi lokal VLAN yapılandırmasını saklar 
     - Switch(config-if)#switchport voice vlan 110 ---- voice vlan eklemek
     - > Switch(config)#int range fastEthernet 0/1-10 (Port aralığı seçmek)
 
-3. PORT GÜVENLİĞİ - KULLANILMAYAN PORTLAR
+6. PORT GÜVENLİĞİ - KULLANILMAYAN PORTLAR
     - Switch(config)#int range fa0/4-24
     - Switch(config-if-range)#switchport mode access --- modu elle yapılandırdık
     - Switch(config-if-range)#switchport nonegotiate --- dtp kapatma
     - Switch(config-if-range)#switchport access vlan 999 --- karadelik vlan ı na atadık
     - Switch(config-if-range)#shutdown  --- portu kapattık
 
-
-
-
-
-5. Management VLAN (svı)
+7. Management VLAN (svı)
     - Switch(config)# vlan 51
     - Switch(config-vlan)# name Management_VLAN
     - Switch(config)# interface vlan 51
