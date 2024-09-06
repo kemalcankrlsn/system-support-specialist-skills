@@ -130,4 +130,6 @@ Switch#show vlan id 10 --- 10 vlanı görmek
 Switch#show interfaces switchport --- tüm portları görmek 
 Switch#show interfaces gi0/1 status --- status olarak görmek
 Switch#show vtp status --- vtp görmek
+Switch#show ip interface brief  ---- int lerin ip adreslerini görmek
+
 
