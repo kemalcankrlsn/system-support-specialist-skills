@@ -33,5 +33,5 @@
 13. DHCP Snooping --- security.md
 14. Dynamic ARP Inspection --- security.md
 15. IP Source Guard --- security.md
-16. Port Security
-17. ACL for VTY interfaces
+16. Port Security --- security.md
+17. ACL for VTY interfaces --- 
