@@ -98,4 +98,17 @@ Switch(config-if-range)#switchport port-security
 Switch(config-if-range)#switchport port-security maximum 1
 Switch(config-if-range)#switchport port-security mac-address sticky 
 Switch(config-if-range)#switchport port-security violation shutdown
- 
+
+
+
+9. ACL for VTY interfaces
+   1. Router üzerinden yönlendirmeleri yaptık
+   2. uzakta management pc var
+   3. test yapılacak switch üzerinde ssh yapılandırmaları yaptık int vlan 1 ip atadık
+   4. TEST-SSH(config)#access-list 10 permit host 192.168.1.11 --- 192.168.1.11 ip adresli cihaza izin veriyoruz
+   5. TEST-SSH(config)#access-list 10 deny any ---- deny any diğerlerini engelliyoruz.
+   6. TEST-SSH(config)#line vty 0 4 --- oluşturulan line hattına giriyoruz
+   7. TEST-SSH(config-line)#access-class 10 in --- access list 10 u seçiyoruz.
+   > [Connection to 192.168.2.150 closed by foreign host] diğer cihazların aldığı mesaj
+   > 192.168.1.11 cihazı sadece erişebiliyor.
+
