@@ -1,17 +1,3 @@
-## SWİTCH Teknolojisi Kullanım:
-- Switch# reload 					--- sw yeniden başlat
-- Switch#reload --- cihazı yeniden başlatma
-- Switch#end -- enable ekranına götürür
-- Switch>exit veya Switch>logout --- cihazdan çıkış yapar
-
-
-# SIRASIYLA ; >
-
-## SWİTCH Genel Config Kodları:
-- Switch# clock set 08:10:50 29 August 2023 	--- zamanı ayarla
-- Switch(config)#no ip domain-lookup ---Bilgi: Bu komut ile ip domain sorgusunu kapatıyoruz. CTRL+SHIFT+6 ile de sorgu esnasında kapatabiliyoruz.
-- Switch(config)#ip default-gateway 192.168.1.1 --- Default Gateway
-
 ## CISCO Kullanıcı Modları
 - Switch> 					(User Executive Mode) 
 - Switch#(enable) 				(Privileged Execute Mode)
@@ -27,22 +13,17 @@
 ## EKRANA UYARI
 - Switch(config)#banner motd %			% 	= satırlara yazma
 
+## Enable parolası:
+- Switch(config)#enable password cisco (enable parolası belirledik.)
+
 ## Konsol Config ve Kablosu Güvenlik İşlemleri:
 - Switch(config)#line console 0
 - Switch(config-line)#password cisco
-- Switch(config-line)#exec-timeout 3 30
+- Switch(config-line)#exec-timeout 3 30 
 - Switch(config-line)#logging synchronous 
 - Switch(config-line)#login local
 - Switch(config-line)#end
 > Bilgi: exec-timeout 3 30 = 3dakika30saniye işlem olmaz ise kapat.
-
-## Kullanıcı oluşturma:
-- Switch(config)#username kemalcan secret cisco - user ve şifre oluşturma
-- Switch(config)#username admin secret ciso - user ve şifre oluşturma
-
-## Enable parolası:
-- Switch(config)#enable password cisco (enable parolası belirledik.)
-
 
 ## Switch Telnet/SVI Ayarları:
 - Switch>en
@@ -61,11 +42,18 @@
 
 > "no exec-timeout" ile zaman sınırlandırmasını kaldırıyoruz.
 
+## SWİTCH Genel Config Kodları:
+- Switch# clock set 08:10:50 29 August 2023 	--- zamanı ayarla
+- Switch(config)#no ip domain-lookup ---Bilgi: Bu komut ile ip domain sorgusunu kapatıyoruz. CTRL+SHIFT+6 ile de sorgu esnasında kapatabiliyoruz.
+- Switch(config)#ip default-gateway 192.168.1.1 --- Default Gateway
+
+## Kullanıcı oluşturma:
+- Switch(config)#username kemalcan secret cisco - user ve şifre oluşturma
+- Switch(config)#username admin secret ciso - user ve şifre oluşturma
+
 ## Telnet ve Console den geçen Şifreleri Kriptolama
 - Switch(config)#service password-encryption 		= ŞİFRELERİ KRİPTOLAMA
 > Görünen kullanıcıların şifrelerini krittolama bunu yapmaz isek sh run da şifreler gözükür.
-
-
 
 ## SSH Ayarları:
 - Switch(config)#ip domain name kemalck.local
@@ -80,10 +68,20 @@
 - Switch(config)# ip ssh version 2
 > IP SSH gücü 1024 normal 2048 daha güçlü kriptolama işlemi, ip ssh version 2 de güncel olan versiyon seçiyoruz.line vty de sonrasında da yazabiliriz.
 
-
 ## Ayarları Sw-Router Kayıt Etme
 - Switch#copy running-config startup-config 		= running-config den startup config e kopyalama işlemi
 -  Switch#wr 
+
+>
+---------------------------------------------
+>
+
+## SWİTCH Teknolojisi Kullanım:
+- Switch# reload 					--- sw yeniden başlat
+- Switch#reload --- cihazı yeniden başlatma
+- Switch#end -- enable ekranına götürür
+- Switch>exit veya Switch>logout --- cihazdan çıkış yapar
+
 
 ## SWİTCH SHOW Komutları:
 - Switch# show clock 				        --- Cihaz Saatini görüyoruz
