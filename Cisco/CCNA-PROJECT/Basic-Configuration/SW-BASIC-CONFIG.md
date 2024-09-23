@@ -53,6 +53,8 @@
 
 ## Telnet ve Console den geçen Şifreleri Kriptolama
 - Switch(config)#service password-encryption 		= ŞİFRELERİ KRİPTOLAMA
+- Router(config)# login block-for 300 attempts 5 within 60 --- Eğer 5 başarısız giriş denemesi olursa, cihaz 300 saniye boyunca oturum açma girişimlerini engeller.
+
 > Görünen kullanıcıların şifrelerini krittolama bunu yapmaz isek sh run da şifreler gözükür.
 
 ## SSH Ayarları:
@@ -70,7 +72,7 @@
 
 ## Ayarları Sw-Router Kayıt Etme
 - Switch#copy running-config startup-config 		= running-config den startup config e kopyalama işlemi
--  Switch#wr 
+- Switch#wr 
 
 >
 ---------------------------------------------

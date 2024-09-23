@@ -13,25 +13,25 @@
 12. Encrypting all passwords ---- şifrelerin config dosyalarına şifrelenerek kayıt edilmesi
 13. Set Current Clock Time ---- sw router zaman girilmesi
 14. Set management IP Address-SW ---- svı yapılandırılması router de loopback 0
-15. Prevent Brute-force Attack-Router ---- bu sanırım ssh telneti kapatmak
+15. Prevent Brute-force Attack-Router ---- blcok-for
 16. Viewing Running & Startup Configs ---- sh run komutu
 17. Saving running into startup configs ---- wr komutu
 
 ## SWITCHING TECHNOLOGIES
-VLANs
-VLAN Trunking Protocol- VTP
-Trunk- Allowed/Denied VLANs
-Configure Native VLAN
-Remote Access- Telnet
-Remote Access- SSH
-L2 EtherChannel- PAGP/LACP
-L2 EtherChannel- ON Mode
-Secure All Unused Switchports
-STP Attack Prevention
-Disable CDP on the Devices
-VLAN Hoping Attack Pevention
-DHCP Snooping 
-Dynamic ARP Inspection
-IP Source Guard
-Port Security
-ACL for VTY interfaces
+1. VLANs --- vlan.md
+2. VLAN Trunking Protocol- VTP --- vlan.md
+3. Trunk- Allowed/Denied VLANs --- vlan.md
+4. Configure Native VLAN --- vlan.md
+5. Remote Access- Telnet --- SW-BASIC-CONFIG.md
+6. Remote Access- SSH --- SW-BASIC-CONFIG.md
+7. L2 EtherChannel- PAGP/LACP --- etherchannel.md
+8. L2 EtherChannel- ON Mode --- etherchannel.md
+9. Secure All Unused Switchports --- vlan.md / security.md
+10. STP Attack Prevention --- stp.md / security.md
+11. Disable CDP on the Devices  --- secirity.md
+12. VLAN Hoping Attack Pevention --- vlan.md / secirity.md
+13. DHCP Snooping --- security.md
+14. Dynamic ARP Inspection --- security.md
+15. IP Source Guard --- security.md
+16. Port Security
+17. ACL for VTY interfaces
