@@ -1,4 +1,4 @@
-## BASIC CONFIGURATIONS[https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Cisco/CCNA-PROJECT/Basic-Configuration/SW-BASIC-CONFIG.md]
+## [BASIC CONFIGURATIONS](https://github.com/kemalcankrlsn/system-support-specialist-skills/blob/main/Cisco/CCNA-PROJECT/Basic-Configuration/SW-BASIC-CONFIG.md)
 1. Navigating User Levels --- EN-CONFT User modları
 2. Hostname --- cihaz adı router switch adı
 3. Banner motd/message --- ilk giriş mesajı
