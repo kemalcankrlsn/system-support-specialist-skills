@@ -32,7 +32,7 @@ yaparak portu tekrar açıyoruz.
 
 3. Disable CDP on the Devices
 > CDP Cisco cihazların birbirlerine bilgiler gönderdiği servis bunu kapatıyoruz.
-- Switch(config)# no cdp run ne işe yarar
+- Switch(config)# no cdp run
 
 > Yada kullanılmayan portlarda sadece kapatabiliriz.
 - Switch(config)# interface gigabitEthernet 0/1
@@ -66,7 +66,7 @@ Switch#show ip dhcp snooping
    - Switch#sh ip arp inspection interfaces --- detaylı görmek
 
 7. IP Source Guard
-> deneyemedim
+- Router(config)# login block-for 300 attempts 5 within 60 --- Eğer 5 başarısız giriş denemesi olursa, cihaz 300 saniye boyunca oturum açma girişimlerini engeller.
 
 8. Port Security
 ## PORT SECURİTY Portlarda aktif ediyoruz

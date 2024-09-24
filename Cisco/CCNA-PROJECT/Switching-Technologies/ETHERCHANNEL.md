@@ -41,6 +41,7 @@ passive: LACP teklifini bekleyen moddur.
 
 > Yapılandırma sonrası trunk ve vlan geçişleri portchannel portu üzerinden yapılması gerekiyor.
 
+
 ## Yapılandırma:
 ### No Protocol - Statik Yapılandırma
 Switch(config)#interface range gigabitEthernet 0/1-2
