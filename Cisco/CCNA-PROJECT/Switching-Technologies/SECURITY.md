@@ -1,104 +1,76 @@
-1. Secure All Unused Switchports 
-> Switch üzerinde kullanılmayan portları kapatmak ve blackhole 999 vlan ı ne dahil etmek.
-> Trunk hattı üzerinde geçebilecek vlanleri işaretlemek ve native vlan değiştirmek ve dtp kapatmak
+1. Secure All Unused Switchports
  - PORT GÜVENLİĞİ - KULLANILMAYAN PORTLAR
     - Switch(config)#int range fa0/4-24
-    - Switch(config-if-range)#switchport mode access --- modu elle yapılandırdık
-    - Switch(config-if-range)#switchport nonegotiate --- dtp kapatma
-    - Switch(config-if-range)#switchport access vlan 999 --- karadelik vlan ı na atadık
-    - Switch(config-if-range)#shutdown  --- portu kapattık
+    - Switch(config-if-range)#switchport mode access 
+    - Switch(config-if-range)#switchport nonegotiate 
+    - Switch(config-if-range)#switchport access vlan 999 
+    - Switch(config-if-range)#shutdown
  - TRUNK HATTI OLUŞTURMAK:
     - Switch(config)# interface gigabitEthernet 0/1
     - Switch(config-if)# switchport mode trunk
-    - Switch(config-if)# switchport trunk allowed vlan 10,20,51,99,110,120 --- SADECE 10,20 Vlanları geçer
-    - Switch(config-if)# switchport trunk native vlan 99 --- native vlan 99 oluyor
-    - Switch(config-if)# switchport nonegotiate --- dtp kapatma
+    - Switch(config-if)# switchport trunk allowed vlan 10,20,51,99,110,120 
+    - Switch(config-if)# switchport trunk native vlan 99 
+    - Switch(config-if)# switchport nonegotiate 
 
 2. STP Attack Prevention
-> Portfast VE Bpduguard
-
-Switch(config)#interface fastEthernet 0/10 --- interface seçtik
-Switch(config-if)#spanning-tree portfast --- 
-Switch(config-if)#spanning-tree bpduguard enable --- 
-> Şimdi pvst yapılandırma olan portlarda switchlerde porta istemci pc client takıldığından gecikme yaşanıyor bu gecikme yaşanmaması için portfast diyoruz bu portu hızlandırıyoruz yani rapid pvst yapıyoruz bu uygulamayı yaptıktan sonra bu porta switch hub takıldığı zaman loop olmaması için bpduguard enable diyoruz bu porta switch takıldığında portu kapatıyor.
-> Switch hub takıldığı zaman port down oluyor portu tekrar açmak için
-
-Switch(config)#int fa0/10
-Switch(config-if)#shutdown
-Switch(config-if)#no shutdown 
-
-yaparak portu tekrar açıyoruz.
+ - Portfast VE Bpduguard
+   - Switch(config)#interface fastEthernet 0/10 
+   - Switch(config-if)#spanning-tree portfast 
+   - Switch(config-if)#spanning-tree bpduguard enable 
+ - PORTU TEKRAR AÇMAK
+   - Switch(config)#int fa0/10
+   - Switch(config-if)#shutdown
+   - Switch(config-if)#no shutdown 
 
 
 3. Disable CDP on the Devices
-> CDP Cisco cihazların birbirlerine bilgiler gönderdiği servis bunu kapatıyoruz.
-- Switch(config)# no cdp run
-
-> Yada kullanılmayan portlarda sadece kapatabiliriz.
-- Switch(config)# interface gigabitEthernet 0/1
-- Switch(config-if)# no cdp enable
+   - Switch(config)# no cdp run
+   - Switch(config)# interface range fastethernet 0/4-24
+   - Switch(config-if)# no cdp enable
 
 4. VLAN Hoping Attack Pevention
-Switch(config-if)# switchport nonegotiate
-> trunk hattı ve tüm portlarda dtp kapatmak dtp dinamik trunk hattı oluşturan protokol
+   - Switch(config-if)# switchport nonegotiate
 
 5. DHCP Snooping
-Switch(config)#ip dhcp snooping 
-Switch(config)#ip dhcp snooping vlan 1
-> dhcp snooping etkinleştirme
-
-Switch(config)#int range fastEthernet 0/4-5
-Switch(config-if-range)#ip dhcp snooping trust 
-> fastethernet 4-5 e dhcp güveniyor
-
-
-Switch#show ip dhcp snooping 
+   - Switch(config)#ip dhcp snooping
+   - Switch(config)#ip dhcp snooping vlan 10,20,30.....
+ - Güvenilir portlar SW-SW / SW-RUTER Gibi
+   - Switch(config)#int range gi 0/1-2
+   - Switch(config-if-range)#ip dhcp snooping trust -fastethernet 4-5 e dhcp güveniyor
+ - Kullanılmayan portlarda rate 1 yapalım sadece 1 dhcp paketi geçsin
+   - Switch(config-if)#int ra fa0/3,24
+   - Switch(config-if-range)#ip dhcp snooping limit rate 1
 
 6. Dynamic ARP Inspection
- 1. önce dhcp snooping etkinleştiriyoruz
- 2. Belirli VLAN'larda DAI’yi etkinleştirmek için şu komutu kullanabilirsiniz:
-   - Switch(config)#ip arp inspection vlan 1
- 3. Güvenilir ve Güvenilmeyen Portlar Tanımlama
-   - Switch(config)#int range fastEthernet 0/1-5
+   - Switch(config)#ip dhcp snooping
+   - Switch(config)#ip arp inspection vlan 10,20,30 --- Bu komut, VLAN 10, 20, 30 üzerinde ARP denetimini etkinleştirir.
+
+   - Switch(config)#int range gi 0/1-2
    - Switch(config-if-range)#ip arp inspection trust 
 
-   - Switch#sh ip arp inspection interfaces --- güvenilir portları görmek
-   - Switch#sh ip arp inspection interfaces --- detaylı görmek
+   - Switch#sh ip arp inspection interfaces
 
 7. IP Source Guard
-- Router(config)# login block-for 300 attempts 5 within 60 --- Eğer 5 başarısız giriş denemesi olursa, cihaz 300 saniye boyunca oturum açma girişimlerini engeller.
+   - Router(config)# login block-for 300 attempts 5 within 60 
 
 8. Port Security
-## PORT SECURİTY Portlarda aktif ediyoruz
-- Switch(config)#interface range fa0/1-6
-- Switch(config-if-range)#switchport mode access 
-- Switch(config-if-range)#switchport port-security 
 
-## Kurallar
-- Switch(config-if)# switchport port-security maximum 2 --- İzin Verilen Maksimum MAC Adresi öğrenme
+   - Switch(config)#interface range fa0/1-6
+   - Switch(config-if-range)#switchport mode access 
+   - Switch(config-if-range)#switchport port-security 
 
-## MAC Adress öğrenme
-- Switch(config-if)# switchport port-security mac-address 0001.1234.5678 --- Statik MAC Adresi Tanımlama
-- Switch(config-if)# switchport port-security mac-address sticky --- Dinamik Olarak MAC Adresi Öğrenme
+   - Switch(config-if)# switchport port-security maximum 1 
+   - Switch(config-if)# switchport port-security aging time 15 
 
-## Eylemler (Güvenlik İhlali Eylemi (Violation Mode) Ayarlama)
-- Switch(config-if)# switchport port-security violation protect --- İhlal durumunda, port sadece yetkisiz trafiği düşürür, herhangi bir bildirim yapılmaz.
-- Switch(config-if)# switchport port-security violation restrict --- İhlal durumunda, yetkisiz trafiği düşürür ve log'lama (syslog) yapar, aynı zamanda güvenlik sayacını artırır.
-- Switch(config-if)# switchport port-security violation shutdown --- İhlal durumunda, portu tamamen devre dışı bırakır (err-disabled moduna geçirir). Bu mod varsayılan olarak kullanılır
+   - Switch(config-if)# switchport port-security mac-address 0001.1234.5678 --- Statik MAC Adresi Tanımlama
+   - Switch(config-if)# switchport port-security mac-address sticky --- Dinamik Olarak MAC Adresi Öğrenme
 
-## SHOW 
-- Switch# show port-security interface gigabitEthernet 0/1
-- Switch# show port-security
+   - Switch(config-if)# switchport port-security violation protect 
+   - Switch(config-if)# switchport port-security violation restrict 
+   - Switch(config-if)# switchport port-security violation shutdown 
 
-
-
-Switch(config)#interface fastEthernet 0/1
-Switch(config-if-range)#switchport mode access 
-Switch(config-if-range)#switchport port-security 
-Switch(config-if-range)#switchport port-security maximum 1
-Switch(config-if-range)#switchport port-security mac-address sticky 
-Switch(config-if-range)#switchport port-security violation shutdown
-
+   - Switch# show port-security interface gigabitEthernet 0/1
+   - Switch# show port-security
 
 
 9. ACL for VTY interfaces

@@ -19,6 +19,8 @@
 ## Kullanıcı oluşturma:
 - Switch(config)#username kemalcan secret cisco - user ve şifre oluşturma
 - Switch(config)#username admin secret ciso - user ve şifre oluşturma
+- username kemalcan privilege 15 secret password --- yönetici (privilege level 15)
+
 
 ## Konsol Config ve Kablosu Güvenlik İşlemleri:
 - Switch(config)#line console 0
