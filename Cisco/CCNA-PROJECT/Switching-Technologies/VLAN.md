@@ -37,6 +37,8 @@ BlackHole Vlan (999)
 - Trunk - Switch, trunk modunda sabitlenir. Karşıdaki switch ne olursa olsun bu port trunk olarak çalışır.
 - Access - Switch, access modunda sabitlenir ve DTP trunk talebi göndermez.
 
+- Switch(config-if-range)#switchport mode dynamic desirable --- trunk olmak istermisin ?
+
 Access bağlantısı switch -> pc bağlantısı 
 Trunk bağlantısı Switch -> Switch vlanların geçmesini sağlar
 
@@ -77,15 +79,15 @@ Transparent Mode: Bu modda switch, kendi lokal VLAN yapılandırmasını saklar 
 
 4. VTP:
     - SERVER;
-    - Switch1(config)# vtp domain NETWORK
+    - Switch1(config)# vtp domain kemalck
     - Switch1(config)# vtp mode server
-    - Switch1(config)# vtp password Cisco123
+    - Switch1(config)# vtp password cisco
     - Switch1(config)# vtp version 2
   
     - CLİENT
-    - Switch2(config)# vtp domain NETWORK
+    - Switch2(config)# vtp domain kemalck
     - Switch2(config)# vtp mode client
-    - Switch2(config)# vtp password kemalc4n*
+    - Switch2(config)# vtp password cisco
     - Switch2(config)# vtp version 2
   
     - TRANSPARENT;
