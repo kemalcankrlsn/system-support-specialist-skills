@@ -24,6 +24,7 @@
 - `winver` windows versionu gösterir
 - `systeminfo` cmd den bu kodu girince detaylı windows versiyonu ve pc bilgileri
 - `gpresult /h C:\gpo_report.html` GPO'ları çeker. `rsop.msc` ile de kullanılabilir.
+- `curl ip.sb` DIŞ Private ip adresi öğrenme 
 
 ## Windows Network Ağ İzleme
 - "Resource Monitor" ile kısmi ağ izleme yapabiliriz, Kaynakların network aktiviteleri, Network activity, TCP bağlantıları, Listening Ports
